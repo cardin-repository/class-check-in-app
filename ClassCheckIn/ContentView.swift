@@ -62,6 +62,11 @@ struct ContentView: View {
                 }
 
                 Section("Recent check-ins") {
+                    if !checkIns.isEmpty {
+                        Text("\(checkIns.count) recent check-ins")
+                            .font(.caption)
+                            .foregroundStyle(.secondary)
+                    }
                     if isLoading && checkIns.isEmpty {
                         ProgressView("Loading check-ins...")
                     } else if checkIns.isEmpty {
