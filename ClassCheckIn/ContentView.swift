@@ -32,7 +32,7 @@ struct ContentView: View {
     @State private var isLoading = false
     @State private var errorMessage: String?
 
-    private let baseURL = "http://127.0.0.1:8000"
+    private let baseURL = "https://class-check-in-api.onrender.com"
 
     var body: some View {
         NavigationStack {
